@@ -186,7 +186,7 @@
                         <div class="iq-card iq-card-block iq-card-stretch iq-card-height shadow-none m-0">
                             <div class="iq-card-body p-0 ">
                                 <div class="bg-primary p-3">
-                                    <h5 class="mb-0 text-white line-height">Hello Nik jone</h5>
+                                    <h5 class="mb-0 text-white line-height">Hello {{ auth()->user()->name }}</h5>
                                     <span class="text-white font-size-12">Available</span>
                                 </div>
                                 <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
@@ -234,8 +234,8 @@
                                     </div>
                                 </a>
                                 <div class="d-inline-block w-100 text-center p-3">
-                                    <a class="iq-bg-danger iq-sign-btn" href="sign-in.html" role="button">Sign out<i
-                                            class="ri-login-box-line ml-2"></i></a>
+                                    <a class="iq-bg-danger iq-sign-btn" href="{{ route('logout') }}"
+                                        role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
                                 </div>
                             </div>
                         </div>
