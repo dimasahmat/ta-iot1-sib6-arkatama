@@ -4,7 +4,7 @@
     <!-- Sign in Start -->
     <section class="sign-in-page bg-white">
         <div class="container-fluid p-0">
-            <div class="row no-gutters">
+            <div class="row no-gutters justify-content-center center-content">
                 <div class="col-sm-6 align-self-center">
                     <div class="sign-in-from">
                         <h1 class="mb-0">Register</h1>
@@ -29,7 +29,7 @@
                             <div class="form-group">
                                 <label for="password_confirmation">Password Confirmation</label>
                                 <input name="password_confirmation" type="password" class="form-control mb-0"
-                                    id="password_confirmation" placeholder="password_confirmation">
+                                    id="password_confirmation" placeholder="password confirmation">
                             </div>
                             <div class="d-inline-block w-100">
                                 <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
@@ -49,35 +49,6 @@
                                 </ul>
                             </div>
                         </form>
-                    </div>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <div class="sign-in-detail text-white"
-                        style="background: url(images/login/2.jpg) no-repeat 0 0; background-size: cover;">
-                        <a class="sign-in-logo mb-5" href="#"><img src="images/logo-white.png" class="img-fluid"
-                                alt="logo"></a>
-                        <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true"
-                            data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1"
-                            data-items-mobile-sm="1" data-margin="0">
-                            <div class="item">
-                                <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
-                                <h4 class="mb-1 text-white">Manage your orders</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content.
-                                </p>
-                            </div>
-                            <div class="item">
-                                <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
-                                <h4 class="mb-1 text-white">Manage your orders</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content.
-                                </p>
-                            </div>
-                            <div class="item">
-                                <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
-                                <h4 class="mb-1 text-white">Manage your orders</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
