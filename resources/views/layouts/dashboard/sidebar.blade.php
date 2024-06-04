@@ -16,20 +16,21 @@
         <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="iq-menu">
                 <li class="iq-menu-title"><i class="ri-separator"></i><span>Main</span></li>
-                <li class="active">
-                    <a href="#dashboard" class="iq-waves-effect collapsed" data-toggle="collapse"
-                        aria-expanded="false"><i class="ri-home-4-line"></i><span>Dashboard</span></a>
+                <li class="@if (request()->url() == route('dashboard')) active @endif">
+                    <a href="{{ route('dashboard') }}" class="iq-waves-effect collapsed"><i
+                            class="ri-home-4-line"></i><span>Dashboard</span></a>
                 </li>
-                <li>
-                    <a href="#mailbox" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i
-                            class="ri-mail-line"></i><span>Control</span></a>
+                <li class="@if (request()->url() == '#') active @endif">
+                    <a href="#mailbox" class="iq-waves-effect collapsed"><i
+                            class="ri-lightbulb-line"></i><span>Control</span></a>
                 </li>
-                <li><a href="todo.html" class="iq-waves-effect"><i
-                            class="ri-chat-check-line"></i><span>Sensor</span></a>
+                <li class="@if (request()->url() == '#') active @endif">
+                    <a href="todo.html" class="iq-waves-effect"><i class="ri-temp-cold-line"></i><span>Sensor</span></a>
                 </li>
-                <li>
-                    <a href="#user-info" class="iq-waves-effect collapsed" data-toggle="collapse"
-                        aria-expanded="false"><i class="ri-user-line"></i><span>User</span></a>
+                <li class="@if (request()->url() == route('users.index')) active @endif">
+                    <a href="{{ route('users.index') }}" class="iq-waves-effect collapsed"><i
+                            class="ri-user-line"></i><span>User</span></a>
+                </li>
             </ul>
         </nav>
         <div class="p-3"></div>

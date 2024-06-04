@@ -2,6 +2,7 @@
 
 @section('content')
     <!-- Sign in Start -->
+    @include('layouts.dashboard.navbar')
     <section class="sign-in-page bg-white center-content ">
         <div class="container-fluid ">
             <div class="row no-gutters justify-content-center center-content">
@@ -9,6 +10,9 @@
                     <div class="sign-in-from">
                         <h1 class="mb-0">Login</h1>
                         <p>Enter your email address and password to access admin panel.</p>
+
+                        @include('layouts.dashboard.alerts.danger-alert')
+
                         <form class="mt-4" action="{{ route('login') }}" method="POST">
                             @csrf
                             <div class="form-group">

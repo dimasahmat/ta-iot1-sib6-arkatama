@@ -22,12 +22,21 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="https://github.com/dimasahmat">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{{ route('register') }}">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{{ route('login') }}">Login</a>
-                </li>
+                @if (Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ route('dashboard') }}">Dashbord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ route('logout') }}">Logout</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ route('register') }}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ route('login') }}">Login</a>
+                    </li>
+                @endif
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
